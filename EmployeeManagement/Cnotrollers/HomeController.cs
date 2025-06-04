@@ -8,9 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Cnotrollers
 {
+    [Route("[controller]")]
     public class HomeController : Controller
     {
         // GET: /<controller>/
+        [Route("")]
+        [Route("[action]")]
+        [Route("~/")]
         public IActionResult Index()
         {
             return View();

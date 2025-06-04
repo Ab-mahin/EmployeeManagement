@@ -14,8 +14,6 @@
     <None Remove="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Cnotrollers\" />
-    <Folder Include="Views\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
 </Project>
