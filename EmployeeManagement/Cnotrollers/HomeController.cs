@@ -14,6 +14,7 @@ namespace EmployeeManagement.Cnotrollers
         // GET: /<controller>/
         [Route("")]
         [Route("~/")]
+        [Route("~/Home")]
         public IActionResult Index()
         {
             return View();
