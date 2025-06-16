@@ -28,23 +28,23 @@ namespace EmployeeManagement.Controllers
 
         
         
-        private readonly IStudent _studentRepository = null;
+        private readonly IStudentRepository _studentRepositoryRepository = null;
 
-        public HomeController(IStudent studentRepository)
+        public HomeController(IStudentRepository studentRepositoryRepository)
         {
-            _studentRepository = studentRepository;
+            _studentRepositoryRepository = studentRepositoryRepository;
         }
         
         
         
         public List<StudentModel> getAllStudent()
         {
-            return _studentRepository.getAllStudents();
+            return _studentRepositoryRepository.getAllStudents();
         }
 
         public StudentModel getById(int id)
         {
-            return _studentRepository.getStudentById(id);
+            return _studentRepositoryRepository.getStudentById(id);
         }
         public IActionResult Index()
         {

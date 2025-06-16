@@ -25,7 +25,7 @@ using EmployeeManagement.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IStudent, StudentRepository>();  // Register interface and implementation
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();  // Register interface and implementation
 
 var app = builder.Build();
 

@@ -2,7 +2,7 @@ using EmployeeManagement.Models;
 
 namespace EmployeeManagement.Repository;
 
-public class StudentRepository : IStudent
+public class StudentRepository : IStudentRepository
 {
     public List<StudentModel> getAllStudents()
     {

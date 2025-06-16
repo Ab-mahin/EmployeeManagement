@@ -2,7 +2,7 @@ using EmployeeManagement.Models;
 
 namespace EmployeeManagement.Repository;
 
-public interface IStudent
+public interface IStudentRepository
 {
     List<StudentModel>  getAllStudents();
     StudentModel getStudentById(int id);
