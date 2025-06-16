@@ -11,20 +11,22 @@
     "http": {
       "commandName": "Project",
       "launchBrowser": true,
+      "hotReloadEnabled": true,
+      "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5011",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true
+      }
     },
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7299;http://localhost:5011",
+      "hotReloadEnabled": true,
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7299",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true
+      }
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -32,6 +34,12 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Watch": {
+      "commandName": "Executable",
+      "workingDirectory": "$(ProjectDir)",
+      "executablePath": "dotnet",
+      "commandLineArgs": "watch run --launch-profile http"
     }
   }
 }
