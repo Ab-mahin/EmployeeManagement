@@ -13,6 +13,22 @@ namespace StudentInfo.Controllers
     // [Route("[controller]/[action]")]
     public class HomeController : Controller
     {
+        private readonly IStudentRepository _studentRepository;
+
+        public HomeController(IStudentRepository studentRepository)
+        {
+            _studentRepository = studentRepository;
+        }
+
+        public List<StudentModel> GetAllStudents()
+        {
+            return _studentRepository.getAllStudents();
+        }
+
+        public StudentModel GetStudentById(int id)
+        {
+            return _studentRepository.getStudentById(id);
+        }
         public IActionResult Index()
         {
             return View();
