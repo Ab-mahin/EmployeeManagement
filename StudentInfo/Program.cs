@@ -1,4 +1,4 @@
-﻿// // using EmployeeManagement.Repository;
+﻿// // using StudentInfo.Repository;
 //
 // var builder = WebApplication.CreateBuilder(args);
 // builder.Services.AddControllersWithViews();
@@ -20,7 +20,7 @@
 // app.Run();
 
 
-using EmployeeManagement.Repository;
+using StudentInfo.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

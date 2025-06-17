@@ -1,4 +1,4 @@
-namespace EmployeeManagement.Models;
+namespace StudentInfo.Models;
 
 public class StudentModel
 {

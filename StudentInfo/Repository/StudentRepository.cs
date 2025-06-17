@@ -1,6 +1,6 @@
-using EmployeeManagement.Models;
+using StudentInfo.Models;
 
-namespace EmployeeManagement.Repository;
+namespace StudentInfo.Repository;
 
 public class StudentRepository : IStudentRepository
 {
